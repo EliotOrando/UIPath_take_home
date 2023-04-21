@@ -11,7 +11,7 @@ const Projects = ({nextPage, prevPage, data, setData}) => {
     });
   }
   return(
-    <div className = 'pageWrap'>
+    <div className = 'pageWrap' >
       <h1>Projects</h1>
       <input type='text' placeholder='Project 1' name='project_1' onChange={updateFormData}></input>
       <input type='text' placeholder='Project 2' name='project_2' onChange={updateFormData}></input>

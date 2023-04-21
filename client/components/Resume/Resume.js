@@ -32,14 +32,14 @@ const Resume = ({prevPage, data}) => {
     generateResume();
   }, []);
   if(loaded){
-    const projectsSummarized = responses.map((response, i) => <p key={`response ${i+1} from chatGPT`}>{response}</p>);
+    const projectsSummarized = responses.map((response, i) => <p key={`response ${i+1} from chatGPT`}>-{response}</p>);
     return(
-      <>
+      <div id = 'resumeDisplay'>
         <p>{data.name}</p>
         <p>{data.title}</p>
-        <p>Projects:</p>
+        <p>Project Accomplishments</p>
         {projectsSummarized}
-      </>
+      </div>
     )
   } else {
     return(
